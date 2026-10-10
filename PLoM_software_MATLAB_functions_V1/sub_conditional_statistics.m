@@ -538,6 +538,7 @@ function [] = sub_conditional_statistics(ind_mean,ind_mean_som,ind_pdf,ind_confr
             xlabel(['$k$'],'FontSize',16,'Interpreter','latex'); 
             ylabel(['$\{ Q_k \vert W = w_0(:,',num2str(kw0),')\}$'],'FontSize',16,'Interpreter','latex');             
             title(['Confidence region of $\{ Q_k \vert W = w_0(:,',num2str(kw0),')\}$ and conditional ','meanvalue of $Q_k$ (blue thick) and ${Q_d}_k$ (black thin)         '],...
+             'FontSize',16,'Interpreter','latex');
             numfig = numfig + 1;
             saveas(h,['figure_CondStats',num2str(numfig),'_confregion_w0_',num2str(kw0),'_obsPhys_',num2str(iobsPhys),'.fig']); 
             hold off
